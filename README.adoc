@@ -1,0 +1,668 @@
+Örnek 1
+
+[source,java]
+---------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int sayi;
+        System.out.println("sayı girin: ");
+        sayi= input.nextInt();
+        System.out.println("girilen sayı = " + sayi);
+
+    }
+}
+
+
+---------------------------------------------------------------------
+
+[source,java]
+---------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int sayi;
+        System.out.println("sayı girin: ");
+        sayi= input.nextInt();
+        if(sayi >2 && sayi < 5){
+
+            System.out.println("evet");
+        }
+        else{
+
+            System.out.println("hayır");
+        }
+
+    }
+}
+
+mod alma
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int sayi;
+        System.out.println("sayı girin: ");
+        sayi= input.nextInt();
+        int mod;
+        mod= sayi%5;
+        System.out.println(mod);
+
+    }
+}
+
+girilern sayıyı 1 arttıran program
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int sayi;
+        System.out.println("sayı girin: ");
+        sayi= input.nextInt();
+        System.out.println(sayi+1);
+
+    }
+}
+
+ortalama alan program
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int sayi;
+        System.out.println("sayı girin: ");
+        sayi= input.nextInt();
+        int sayi2;
+        System.out.println("birdaha sayı gir: ");
+        sayi2=input.nextInt();
+        int sayi3;
+        System.out.println("birdaha sayı gir: ");
+        sayi3=input.nextInt();
+        System.out.println((sayi +sayi2+ sayi3)/3);
+
+
+    }
+}
+
+
+üçgenin alanı
+
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int taban;
+        System.out.println("tabanı girin: ");
+        taban= input.nextInt();
+        int yükseklik;
+        System.out.println("yüksekliği gir: ");
+        yükseklik=input.nextInt();
+
+        System.out.println((taban*yükseklik)/2);
+
+
+    }
+}
+
+sayı pozitif mi negatif mi
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int sayi;
+        System.out.println("sayı girin: ");
+        sayi= input.nextInt();
+        if (sayi>0){
+            System.out.println("sayı pozitif");
+        }
+        else{
+            System.out.println("sayı negatif");
+        }
+
+
+    }
+}
+
+geçti mi kaldı mı
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int not;
+        System.out.println("notu girin: ");
+        not= input.nextInt();
+        if (not<=60){
+            System.out.println("geçti");
+        }
+        else {
+            System.out.println("kaldi");
+        }
+
+    }
+}
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+        int sayi=1;
+        Scanner input =new Scanner(System.in);
+        int sayi2;
+
+
+        while(sayi<10){
+            System.out.println("sayiyi girin: ");
+            sayi2= input.nextInt();
+
+            System.out.println("girilen sayi: "+sayi2);
+
+            sayi += 1;
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+
+        Scanner input =new Scanner(System.in);
+        int a;
+        a= input.nextInt();
+        int b;
+        b= input.nextInt();
+        int c;
+        c= input.nextInt();
+
+        int buyuk;
+        buyuk = a;
+
+        if(buyuk <= b){
+
+            buyuk = b ;
+
+        }
+        if(buyuk <= c){
+
+            buyuk = c;
+        }
+        System.out.println("En buyuk sayi="+ buyuk);
+
+
+    }
+}
+
+
+
+sayı = 0
+
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+        int a;
+        Scanner input =new Scanner(System.in);
+        System.out.println("sayı giriniz: ");
+        a= input.nextInt();
+
+        while(a != 0){
+            System.out.println("sayı giriniz: ");
+            a= input.nextInt();
+
+        }
+
+
+
+    }
+}
+
+sayının karesi
+
+import java.util.Scanner;
+
+public class Deneme {
+    public static void main(String [] args){
+
+        int a;
+        Scanner input =new Scanner(System.in);
+        System.out.println("karesi girilecek sayıyı giriniz: ");
+        a= input.nextInt();
+        int kare;
+        kare=a*a;
+
+        System.out.println("sonuç: "+kare);
+
+    }
+}
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+        int k=0;
+        int[] myList={8, 3, 4, 1};
+        k=myList[0];
+        for(int a=1;a < myList.length;a++){
+            if(k > myList[a]){
+                k=myList[a];
+
+            }
+
+        }
+        System.out.println(k);
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+        int[][] aMatris=new int [][]{{2,1},{-1,4}};
+        int[][] bMatris=new int [][]{{3,2},{4,-2}};
+        int[][] cMatris=new int [2][2];
+        int i,j,k,t;
+
+        for(i=0;i<2;i++){
+            for(j=0;j<2;j++){
+                cMatris[i][j] = aMatris[i][j] *bMatris[i][j];
+            }
+        }
+
+        System.out.println("C matrisi");
+        for(i=0; i<2; i++){
+            for(j=0;j<2;j++) {
+                System.out.print(cMatris[i][j]+"\t");
+            }
+
+
+    }}}
+    
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+    int a = 5;
+    int b = 4;
+    int kucuk;
+    int bol;
+    kucuk=minFunction(a,b);
+        System.out.println(kucuk);
+    bol = bolum(a,b) ;
+        System.out.println(bol);
+
+
+    }public static int minFunction(int n1, int n2) {
+        int carpim;
+        carpim=n1* n2;
+
+        return carpim;
+    }
+    public static int bolum(int m1,int m2){
+        int bolum=m1/m2;
+        return bolum;
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+
+        Scanner input =new Scanner(System.in);
+        double a,b,c,d;
+        System.out.println("ilk sayıyı giriniz");
+       a = input.nextDouble();
+        System.out.println("ikinci sayıyı giriniz");
+       b= input.nextDouble();
+        System.out.println("üçüncü sayıyı giriniz");
+       c= input.nextDouble();
+        System.out.println("dördüncü sayıyı giriniz");
+       d= input.nextDouble();
+        System.out.println("sonuç: "+ (a*b)/d+c);
+
+
+
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+
+        Scanner input =new Scanner(System.in);
+
+        double[] myList=new double[4] ;
+        for(int i=0 ; i<myList.length ; i++){
+            System.out.println("sayı giriniz");
+            myList[i] = input.nextDouble();
+
+        }
+
+        System.out.println("sonuç: "+ (myList[0]*myList[1])/myList[3]+myList[2]);
+
+
+
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+
+
+        double yaricap,yukseklik,hacim,yanalAlan,toplamAlan;
+        Scanner input =new Scanner(System.in);
+        System.out.println("yaricap i girin: ");
+        yaricap = input.nextDouble();
+        System.out.println("yuksekligi girin: ");
+        yukseklik= input.nextDouble();
+
+        hacim = Math.PI *yaricap*yaricap*yukseklik/3;
+        yanalAlan= Math.PI*yaricap* Math.sqrt(Math.pow (yukseklik,2)+Math.pow(yaricap,2));
+        toplamAlan= Math.PI*yaricap* (Math.sqrt(Math.pow(yukseklik,2)+Math.pow(yaricap,2))+yaricap);
+        System.out.println(" Hacim= "+hacim  +"\n Yanal Alan= " + yanalAlan  + "\n Toplam Alan= "+toplamAlan);
+
+
+
+
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+
+        for(int i=0;i<=200;i++){
+            if (i%7 ==0 && i%3==0){
+                System.out.println(i);
+            }
+        }
+
+
+
+
+
+
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+
+        int a;
+        Scanner input =new Scanner(System.in);
+        System.out.println("sayi girin: ");
+        a = input.nextInt();
+        int b= faktoriel(a);
+        System.out.println("faktoriel= "+ b);
+
+
+
+    }
+
+    public static int faktoriel(int a1) {
+        int sayi = 1;
+        for (int i = 1; i <= a1; i++) {
+
+            sayi *= i;
+
+        }
+        return sayi;
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+
+        int a=0;
+        int c=0;
+
+        int b= teksayilar(a);
+        int d= ciftsayilar(c);
+        int f= ciftekfarki(b,d);
+        System.out.println("çifterin toplamı= "+ d);
+        System.out.println("teklerin toplamı= "+ b);
+        System.out.println("çifterin toplamı= "+ f);
+
+
+    }
+
+    public static int teksayilar(int a1) {
+        //tekler 1-200
+        int sayi1=0;
+        for(a1 =1; a1<200;a1++){
+            if(a1%2==1){
+                sayi1+=a1;
+            }
+        }
+        return sayi1;
+    }
+    public static int ciftsayilar(int b1){
+        //çiftler 0-200
+        int sayi2=0;
+        for( b1=0;b1<200;b1++){
+            if(b1%2==0){
+                sayi2+=b1;
+            }
+        }
+
+        return sayi2;
+    }
+    public static int ciftekfarki(int c1,int d1){
+       int sayi3=0;
+       sayi3=d1-c1;
+       return sayi3;
+    }
+
+}
+
+
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+
+        int a = 0;
+        int b = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.println("2 yane sayı gir: ");
+        int k = input.nextInt();
+        int l = input.nextInt();
+
+        System.out.println("hangi işlemi yapmak istiyosunuz: ");
+        System.out.println("+:1, -:2 , *:3 , /:4");
+        int secim= input.nextInt();
+        if(secim == 1){
+            int c = toplama(k, l);
+            System.out.println(c);
+        }
+        else if(secim==2){
+            int d = cikarma(k, l);
+            System.out.println(d);
+        }
+        else if(secim==3){
+            int e = carpma(k, l);
+            System.out.println(e);
+        }
+        else if(secim==4){
+            int f = bolum(k, l);
+            System.out.println(f);
+        }
+        else{
+            System.out.println("hatalı giriş");
+        }
+        
+
+    }
+
+    public static int toplama(int a1, int b1) {
+        int sayi1 = 0;
+        sayi1 = a1 + b1;
+        return sayi1;
+    }
+
+    public static int cikarma(int a1, int b1) {
+
+        int sayi2 = 0;
+        sayi2 = a1 - b1;
+
+        return sayi2;
+    }
+
+    public static int carpma(int a1, int b1) {
+        int sayi3 = 0;
+        sayi3 = a1 * b1;
+        return sayi3;
+    }
+
+    public static int bolum(int g1, int h1) {
+        int sayi4 = 0;
+        sayi4 = g1 * h1;
+        return sayi4;
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class Deneme {
+
+    public static void main(String[] args) {
+        int secim = 0;
+        int a = 0;
+        int b = 0;
+        while (secim != 5) {
+
+
+            Scanner input = new Scanner(System.in);
+            System.out.println("2 yane sayı gir: ");
+            int k = input.nextInt();
+            int l = input.nextInt();
+
+            System.out.println("hangi işlemi yapmak istiyosunuz: ");
+            System.out.println("+:1, -:2 , *:3 , /:4 , çıkmak için:5");
+            secim = input.nextInt();
+            if (secim == 1) {
+                int c = toplama(k, l);
+                System.out.println(c);
+            } else if (secim == 2) {
+                int d = cikarma(k, l);
+                System.out.println(d);
+            } else if (secim == 3) {
+                int e = carpma(k, l);
+                System.out.println(e);
+            } else if (secim == 4) {
+                int f = bolum(k, l);
+                System.out.println(f);
+            } else if(secim!=1 && secim!=2 &&  secim!=4 && secim!=3 && secim !=5){
+                System.out.println("hatalı giriş");
+            }
+
+
+        }
+    }
+
+    public static int toplama(int a1, int b1) {
+        int sayi1 = 0;
+        sayi1 = a1 + b1;
+        return sayi1;
+    }
+
+    public static int cikarma(int a1, int b1) {
+
+        int sayi2 = 0;
+        sayi2 = a1 - b1;
+
+        return sayi2;
+    }
+
+    public static int carpma(int a1, int b1) {
+        int sayi3 = 0;
+        sayi3 = a1 * b1;
+        return sayi3;
+    }
+
+    public static int bolum(int g1, int h1) {
+        int sayi4 = 0;
+        sayi4 = g1 * h1;
+        return sayi4;
+    }
+}
+
+
+
+
+
+
+
+---------------------------------------------------------------------

@@ -661,7 +661,50 @@ public class Deneme {
 
 
 
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]){
+        ogrenci o1= new ogrenci();
+        ogretmen og1= new ogretmen();
+        Scanner input = new Scanner(System.in);
+        System.out.println("ogrenci misin ogretmen mi ");
+        System.out.println("ogrenci:1, ogretmen:2");
+        int secim = input.nextInt();
+        if(secim==1){
+            System.out.println("adınız ne");
+            o1.ad= input.next();
+            System.out.println("soyadınız ne");
+            o1.soyad=input.next();
+            System.out.println("tc ne");
+            o1.tc= input.nextLong();
+            System.out.println("ogrenci no: ");
+            o1.no=input.nextInt();
+        }
+       else if(secim==2){
+            System.out.println("adınız ne");
+            og1.ad= input.next();
+            System.out.println("soyadınız ne");
+            og1.soyad=input.next();
+            System.out.println("tc ne");
+            og1.tc= input.nextLong();
+            System.out.println("maas : ");
+            og1.maas=input.nextInt();
 
+        }
+    }
+}
+public class Insan {
+    String ad;
+    String soyad ;
+    long tc;
+
+}
+class ogrenci extends Insan{
+    int no;
+}
+class ogretmen extends Insan{
+    int maas;
+}
 
 
 
